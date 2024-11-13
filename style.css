@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background-color: #d1e3ff;
+  height: 50rem;
+}
+
+.contactNav {
+  background-color: black;
+  color: white;
+  height: 3rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 25px;
+}
+
+.contact img{
+    width: 15px;
+}
