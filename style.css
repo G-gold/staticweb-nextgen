@@ -1,10 +1,16 @@
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
 .wrapper {
-  background-color: #d1e3ff;
+  background-color: #d0e2fe;
   height: 50rem;
 }
 
@@ -22,6 +28,100 @@
   padding: 0 25px;
 }
 
-.contact img{
-    width: 15px;
+.contact img {
+  width: 20px;
+}
+
+.phone,
+.email {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.navSection {
+  display: flex;
+  height: 2.5rem;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  font-family: lato, sans-serif;
+  font-size: 1rem;
+  gap: 55px;
+  position: relative;
+  left: 500px;
+}
+
+.navList :hover {
+  color: #0355cc;
+  cursor: pointer;
+}
+
+.slidder img {
+  margin-top: 40px;
+  width: 550px;
+}
+
+.ggoldHeading {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  margin-left: 20px;
+}
+
+.repair {
+  font-size: 2.5rem;
+  font-family: lato, sans-serif;
+  font-weight: 900;
+  color: #0355cc;
+}
+
+.details {
+  margin-top: 30px;
+}
+
+.ggoldHeading button {
+  background-color: #fb8a1d;
+  width: 190px;
+  padding: 15px;
+  font-size: 1rem;
+  color: white;
+  margin-top: 30px;
+  border-radius: 5px;
+  border: none;
+}
+
+.ggoldHeading button:hover {
+  background-color: #d0e2fe;
+  border: solid #fb8a1d 1px;
+  color: #fb8a1d;
+  cursor: pointer;
+}
+
+.threeSquare {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 130px;
+  height: 250px;
+}
+
+.repairSquare {
+  justify-content: center;
+  align-content: center;
+  width: 350px;
+  background-color: #ffffff;
+}
+
+.improveSquare {
+  width: 350px;
+  background-color: #fb8a1d;
+}
+
+.maintainSquare {
+  width: 350px;
+  background-color: #ffffff;
 }
