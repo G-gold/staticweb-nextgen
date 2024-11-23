@@ -11,7 +11,7 @@
 
 .wrapper {
   background-color: #d0e2fe;
-  height: 50rem;
+  height: 56rem;
 }
 
 .contactNav {
@@ -41,9 +41,14 @@
 
 .navSection {
   display: flex;
-  height: 2.5rem;
-  margin-top: 25px;
-  margin-left: 20px;
+  position: relative;
+  top: -3%;
+}
+
+.logo,
+.navbar {
+  display: flex;
+  align-items: center;
 }
 
 .navList {
@@ -53,7 +58,7 @@
   font-size: 1rem;
   gap: 55px;
   position: relative;
-  left: 500px;
+  left: 640px;
 }
 
 .navList :hover {
@@ -61,16 +66,21 @@
   cursor: pointer;
 }
 
+.slidder {
+  position: absolute;
+  left: 52%;
+}
+
 .slidder img {
-  margin-top: 40px;
-  width: 550px;
+  margin-top: -60px;
+  width: 530px;
 }
 
 .ggoldHeading {
   display: flex;
   flex-direction: column;
-  margin-top: 200px;
-  margin-left: 20px;
+  margin-top: 100px;
+  margin-left: 40px;
 }
 
 .repair {
@@ -82,6 +92,7 @@
 
 .details {
   margin-top: 30px;
+  line-height: 22px;
 }
 
 .ggoldHeading button {
@@ -92,7 +103,8 @@
   color: white;
   margin-top: 30px;
   border-radius: 5px;
-  border: none;
+  border: solid #d0e2fe 1px;
+  transition: all 0.3s ease-in-out;
 }
 
 .ggoldHeading button:hover {
@@ -104,24 +116,49 @@
 
 .threeSquare {
   display: flex;
-  justify-content: space-around;
-  margin-top: 130px;
-  height: 250px;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  top: 18.5%;
+  height: 200px;
 }
 
-.repairSquare {
+.repairSquare,
+.improveSquare,
+.maintainSquare {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-content: center;
-  width: 350px;
+  align-items: center;
+  text-align: center;
+  width: 360px;
+  height: 220px;
   background-color: #ffffff;
+  color: #0355cc;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 15px 0px;
+  transition: all 0.3s ease-in-out;
+}
+
+.repairSquare img,
+.improveSquare img,
+.maintainSquare img {
+  margin-bottom: 15px;
 }
 
 .improveSquare {
-  width: 350px;
   background-color: #fb8a1d;
+  color: #ffffff;
 }
 
-.maintainSquare {
-  width: 350px;
-  background-color: #ffffff;
+.repairSquare:hover,
+.maintainSquare:hover {
+  background-color: #fb8a1d;
+  cursor: pointer;
+}
+
+.aboutUs {
+  display: flex;
+  /* height: 56rem; */
+  position: relative;
+  top: 35%;
 }
